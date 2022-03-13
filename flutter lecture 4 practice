@@ -1,0 +1,31 @@
+void main() {
+  Map student = {
+    'Name': 'Ashaj',
+    'Marks': 67,
+    'Class': 'X11',
+    'Subjects': ['english', 'urdu'],
+    'fFav_OS': 'Anroid'
+  };
+  List data = [1, 2.7, "ash", student];
+  print(data[3]['Subjects']);
+  print("======Map is Empty OR not=====");
+  print(student.isEmpty);
+  print(student.isNotEmpty);
+  //=====remove======
+  //student.remove('Name');
+  //print(student);
+  //=====add all====
+  student.addAll({'fyp': 'game', 'gender': 'male'});
+  print(student);
+  // marde method
+  var f1 = {1: 'Apple', 2: 'Orange'};
+  var f2 = {3: 'Banana'};
+  var f3 = {4: 'Mango'};
+  var fruit = {}
+    ..addAll(f1)
+    ..addAll(f2)
+    ..addAll(f3);
+  print(fruit);
+  var fruit3 = {...f1, ...f2, ...f3};
+  print(fruit3);
+}
