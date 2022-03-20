@@ -1,0 +1,42 @@
+  //Question#1
+  List<String> ballList = ["Bilal", "Ashaj", "Ashaj", "Saad", "Bilal", "Saad"];
+  List<String> finalList = ballList.toSet().toList();
+  print(finalList);
+  //Question#2
+  var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+  print(a);
+
+  for (var i in a) {
+    if (i % 2 == 0) ;
+    {
+      print(i);
+    }
+  }
+  //Question#3
+  print("Enter any value");
+  int? num = int.parse(stdin.readLineSync()!);
+
+  if (num % 2 == 0) {
+    print(" Not a Prime Number");
+  } else {
+    print("Prime Number");
+
+    //Question#4
+    var a = 8;
+    var b = 0;
+    for (b = 0; b <= 15; b++) {
+      print("$a x $b =${a * b}");
+    }
+//Question#5
+    var fruits = ["apple", "Bannana", "Orange", "Mango", "Strawberry"];
+    for (var i = 0; i < fruits.length; i++) {
+      print(fruits[i]);
+    }
+    //Question#6
+    var i = 5;
+    for (i; i <= 100; i++) {
+      if (i % 5 == 0) {
+        print(i);
+      }
+    }
+  }
