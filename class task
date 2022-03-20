@@ -1,4 +1,6 @@
- var ashaj = [15,14,26,78,2,69];
+oid main() 
+{
+var ashaj = [15,14,26,78,2,69];
   var largest = ashaj[0];
   var smallest = ashaj[0];
 
