@@ -1,0 +1,15 @@
+ var ashaj = [15,14,26,78,2,69];
+  var largest = ashaj[0];
+  var smallest = ashaj[0];
+
+  for (var i = 0; i < ashaj.length; i++) {
+    if (ashaj[i] > largest) {
+      largest = ashaj[i];
+    }
+    if (ashaj[i] < smallest) {
+      smallest = ashaj[i];
+    }
+  }
+  print("Largest Values is : ${largest}");
+  print("Small Values is : ${smallest}");
+}
