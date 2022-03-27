@@ -1,0 +1,18 @@
+void main()
+{
+  var abc = "yes";
+  while (abc == "yes") {
+    print("Enter Email");
+    var email = stdin.readLineSync();
+    print("Enter Password");
+    var password = stdin.readLineSync();
+    if (email == "ashajarshad@gmail.com" && password == "12345") {
+      print("Login Successfully");
+      abc = "no";
+    } else {
+      print("login failed");
+      abc = stdin.readLineSync()!;
+    }
+  }
+ 
+}
