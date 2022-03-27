@@ -1,0 +1,11 @@
+void main() {
+  table(7);
+}
+
+void table(int table) {
+  int ans;
+  for (var n = 0; n <= 10; n++) {
+    ans = table * n;
+    print("$table X 1 $n = $ans");
+  }
+}
