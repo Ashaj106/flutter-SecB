@@ -1,0 +1,28 @@
+import 'dart:io';
+
+void main() {
+  List names = ["ASHAJ", "SAAD", "HURRAIRA", "USAID", "HAmza"];
+  List eng_marks = [67, 76, 87, 98, 80];
+  List chemMarks = [66, 77, 88, 99, 50];
+  List phyMarks = [65, 75, 86, 78, 81];
+  List mathsMarks = [64, 72, 83, 93, 60];
+  List compMarks = [69, 70, 81, 95, 90];
+  for (var i = 0; i < names.length; i++) {
+    marksheet(names[i], eng_marks[i], chemMarks[i], phyMarks[i], mathsMarks[i],
+        compMarks[i]);
+  }
+}
+
+void marksheet(name, eng, chem, phy, maths, comp) {
+  print("Student NAme is: $name");
+  var obtain_marks = eng + chem + phy + maths + comp;
+  print("Marks in English is: $eng");
+  print("Marks in Chemistry is: $chem");
+  print("Marks in Physics is: $phy");
+  print("Marks in Maths is: $maths");
+  print("Marks in Computer is: $comp");
+  print("Obtain Marks is: $obtain_marks");
+  var total_marks = 500;
+  var percentage = (obtain_marks / total_marks) * 100;
+  print("Your in Percentage is: $percentage %");
+}
